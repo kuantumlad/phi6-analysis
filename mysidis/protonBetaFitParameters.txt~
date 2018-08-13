@@ -1,0 +1,14 @@
+#beta fit parameters for the MLE approach for protons
+PROT_DBETA_MU_A     6     v         -0.00039358        -0.000701003        -0.000347651           0.0004854         -0.00121666         0.000563786
+PROT_DBETA_MU_A     6     e                   0                   0                   0                   0                   0                   0
+PROT_DBETA_MU_B     6     v        -0.000295423          0.00170899         0.000794901        -0.000744446          0.00376887         -0.00353545
+PROT_DBETA_MU_B     6     e                   0                   0                   0                   0                   0                   0
+PROT_DBETA_MU_C     6     v          0.00227353          0.00231676          0.00364672          0.00276859          0.00128827          0.00439605
+PROT_DBETA_MU_C     6     e                   0                   0                   0                   0                   0                   0
+PROT_DBETA_SIGMA_A     6     v            0.001429          0.00144256          0.00124456          0.00190709          0.00141039           0.0011516
+PROT_DBETA_SIGMA_A     6     e                   0                   0                   0                   0                   0                   0
+PROT_DBETA_SIGMA_B     6     v          -0.0021472         -0.00262226         -0.00196308         -0.00385218         -0.00186708         -0.00186749
+PROT_DBETA_SIGMA_B     6     e                   0                   0                   0                   0                   0                   0
+PROT_DBETA_SIGMA_C     6     v           0.0107541           0.0109091           0.0104381           0.0115449           0.0109969           0.0107759
+PROT_DBETA_SIGMA_C     6     e                   0                   0                   0                   0                   0                   0
+ 

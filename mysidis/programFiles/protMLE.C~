@@ -1,0 +1,6 @@
+bool protonMLE_pass(float beta_meas, float beta_true, float p, std::vector<double> fit_beta_min, std::vector<double> fit_beta_max ){
+
+
+
+
+}
