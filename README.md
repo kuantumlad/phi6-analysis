@@ -1,2 +1,2 @@
 # retro-sidis 
-This repo holds the analysis code of Nathan Harrison.  I am slightly changing things so that I can use it on the interactive farm for my analysis.    
+This repo holds the analysis code of Nathan Harrison and the hadron modification from David Riser. I am changing aa few core things so that the software fits my phi analysis project.
