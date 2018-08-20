@@ -1,0 +1,45 @@
+#!/bin/csh -f
+
+@ n_jobs = 20
+
+set num_runs_to_process="`cat programFiles/dataFiles.txt | wc -l`"
+
+echo " >> PROCESSING "  $num_runs_to_process " RUNS "
+@ n_runs_per_job = ($num_runs_to_process / $n_jobs)
+echo " >> NUMBER OF RUNS PER JOB " $n_runs_per_job
+@ i = 0
+@ job = 0
+
+@ start_run = 0
+@ end_run = $n_runs_per_job
+
+while( $i <= $n_jobs )
+
+    @ finish_run = $end_run - 1
+
+    if ( $end_run >= 590 ) then
+	@ finish_run = 590
+	@ i = $n_jobs
+    endif
+
+    echo " JOBS " $job " RUNS " $start_run " " $finish_run
+    gnome-terminal --geometry=50x5 --command ' root -l -b -q "my_phi6.C+('"$1"','"$start_run"','"$finish_run"','"$2"','"$3"','"$4"','"$5"','"$6"')"'
+    #root -l -b -q "my_phi6.C+('"$1"','"$start_run"','"$finish_run"','"$2"','"$3"','"$4"','"$5"','"$6"')" >& /dev/null &
+
+    #if( $7 == "b" )then
+#	root -l -b -q "my_phi6.C+($1,$start_run,$finish_run,$2,$3,$4,$5,$6)" >& /dev/null &
+ #   endif
+
+    @ start_run = $start_run + $n_runs_per_job 
+    @ end_run = $end_run + $n_runs_per_job 
+
+
+
+    @ job++
+    @ i++
+end
+
+#while(`ps x | grep local | grep root | wc -l` != 0) # wait for all the nodes to finish... make sure no other root applications are running or this will get messed up!!
+#sleep 2
+#end
+#sleep 5

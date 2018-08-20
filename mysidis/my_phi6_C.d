@@ -112,10 +112,8 @@
 ./my_phi6_C.so: /home/bclary/extras/root/build/include/TRotation.h
 ./my_phi6_C.so: programFiles/functions.C programFiles/eID.C
 ./my_phi6_C.so: programFiles/eIDsubroutines.C programFiles/vertexCorr.C
-./my_phi6_C.so: programFiles/sctimeCorr.C programFiles/hadronID.C
-./my_phi6_C.so: programFiles/pipIDsubroutines.C
-./my_phi6_C.so: programFiles/pimIDsubroutines.C
-./my_phi6_C.so: programFiles/protIDsubroutines.C programFiles/getGenIndices.C
-./my_phi6_C.so: MomCorr.C GetSector.C
+./my_phi6_C.so: programFiles/sctimeCorr.C programFiles/hadronMLEID.C
+./my_phi6_C.so: programFiles/getGenIndices.C MomCorr.C GetSector.C
+./my_phi6_C.so: loadBetaParameters.C getBeta.C
 ./my_phi6_C.so: /home/bclary/extras/root/build/include/RVersion.h /home/bclary/extras/root/build/include/RConfig.h /home/bclary/extras/root/build/include/TClass.h /home/bclary/extras/root/build/include/TDictAttributeMap.h /home/bclary/extras/root/build/include/TInterpreter.h /home/bclary/extras/root/build/include/TROOT.h /home/bclary/extras/root/build/include/TBuffer.h /home/bclary/extras/root/build/include/TMemberInspector.h /home/bclary/extras/root/build/include/TError.h /home/bclary/extras/root/build/include/RtypesImp.h /home/bclary/extras/root/build/include/TIsAProxy.h /home/bclary/extras/root/build/include/TFileMergeInfo.h /home/bclary/extras/root/build/include/TCollectionProxyInfo.h /home/bclary/extras/root/build/bin/rootcling
 my_phi6_C__ROOTBUILDVERSION= 6.14/00
